@@ -1,0 +1,13 @@
+{
+  "name": "bitplate",
+  "dependencies": {
+    "async": "~0.2.9",
+    "expect.js": "~0.2.0",
+    "jsdom": "~0.8.10",
+    "sinon": "~1.7.3",
+    "requirejs": "~2.1.9",
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0"
+  }
+}

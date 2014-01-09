@@ -1,7 +1,7 @@
 var requirejs = require("requirejs"),
 	expect = require("expect.js");
 
-describe("Test", function () {
+describe("UserModel", function () {
 	var UserModel, userModel;
 
 	before(function (done) {
@@ -15,7 +15,7 @@ describe("Test", function () {
 		userModel = new UserModel();
 	});
 
-	it("getFullName() should return null if forename and surname's are not set", function () {
+	it("getFullName() should return null if forename and surname are not set", function () {
 		expect(userModel.getFullName()).to.be(null);
 	});
 
@@ -29,7 +29,7 @@ describe("Test", function () {
 		expect(userModel.getFullName()).to.be(null);
 	});
 
-	it("getFullName() should return 'Walter White' if forename and surname's are set", function () {
+	it("getFullName() should return 'Walter White' if forename and surname are set", function () {
 		userModel.set("forename", "Walter");
 		userModel.set("surname", "White");
 		expect(userModel.getFullName()).to.be("Walter White");

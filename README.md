@@ -65,7 +65,7 @@ Testing singletons can be problematic. Because Node.js uses a different instance
 
 ## TODO
 
-* Make the Backbone and Node.js use the same instance of RequireJS.
+* Make Backbone and Node.js use the same instance of RequireJS.
 
 ## Misc
 

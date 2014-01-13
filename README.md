@@ -61,11 +61,9 @@ Now jQuery is loaded by dependency reference. `window` is not required because i
 
 ### Using singletons 
 
-Testing singletons can be problematic. Because Node.js uses a different instance of RequireJS to the front-end application, a different instance of your singleton can be returned.
+Testing singletons can be tricky. Because Node.js uses a different instance of RequireJS to the front-end application, a different instance of your singleton can be returned.
 
-## TODO
-
-* Make Backbone and Node.js use the same instance of RequireJS.
+One way to get around this is attach a method that returns the singleton to the object you're testing.
 
 ## Misc
 

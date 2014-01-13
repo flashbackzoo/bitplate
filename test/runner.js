@@ -2,11 +2,16 @@
 var requirejs = require("requirejs"),
 	path = require("path"),
 	async = require("async"),
-	config = require("./config.js"),
+	requireConfig = require("../app/config.js"),
 	Window = require("./lib/window");
 
 // Configue RequireJS
-requirejs.config(config);
+requirejs.config(requireConfig.options({
+	baseUrl: __dirname + "/../app/",
+	suppress: {
+		nodeShim: true
+	}
+}));
 
 // Create a Window object
 global.window = new Window();

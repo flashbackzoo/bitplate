@@ -1,6 +1,6 @@
 # Bitplate
 
-This is a boilerplate for unit testing backbone applications in a continuous integration environment.
+This is a boilerplate for unit testing Backbone applications in a continuous integration environment.
 
 ## Requirements
 
@@ -19,7 +19,7 @@ Install the dependencies:
 npm install
 ```
 
-Set up the Backbone app:
+Set up the Backbone test application:
 ```
 bower install && grunt
 ```
@@ -37,7 +37,7 @@ Here are some things to watch out for.
 
 ### Using third party plugins
 
-If you're using third party libraries that depend on jQuery (jQuery plugins) you may have to [convert the plugin to AMD](http://stackoverflow.com/questions/10918063/how-to-make-a-jquery-plugin-loadable-with-requirejs) and pass in jQuery by dependency reference.
+If you're using third party libraries that depend on jQuery (jQuery plugins) you may have to convert the plugin to AMD and pass in jQuery by dependency reference.
 
 For example a plugin might be structured like this:
 
@@ -66,5 +66,7 @@ Testing singletons can be tricky. Because Node.js uses a different instance of R
 One way to get around this is attach a method that returns the singleton to the object you're testing.
 
 ## Misc
+
+[Where Bitplate came from](http://www.silverstripe.org/backbone-unit-tests-and-continuous-integration/)
 
 [Mocha TeamCity Reporter](https://github.com/travisjeffery/mocha-teamcity-reporter)

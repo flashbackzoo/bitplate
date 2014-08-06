@@ -5,7 +5,7 @@ describe("UserModel", function () {
 	var UserModel, userModel;
 
 	before(function (done) {
-		requirejs([baseUrl + "/models/userModel.js"], function (Model) {
+		requirejs([global.baseUrl + "/models/userModel.js"], function (Model) {
 			UserModel = Model;
 			done();
 		});

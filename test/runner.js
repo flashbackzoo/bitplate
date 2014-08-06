@@ -25,13 +25,6 @@ describe("Boilerplate test suite", function () {
 		// to the next function in the series. When all tests pass or an error is thrown,
 		// the final callback is executed and the test suite returns.
 		async.series({
-			init: function (callback) {
-				// Any setup required to run the tests.
-				requirejs(["jquery", "backbone"], function ($, Backbone) {
-					Backbone.$ = $;
-					callback();
-				});
-			},
 			userModel: function (callback) {
 				require("./specs/userModel");
 				callback();

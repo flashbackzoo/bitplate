@@ -4,7 +4,7 @@ This is a boilerplate for unit testing Backbone applications in a continuous int
 
 ## Requirements
 
-You will need [Node.js](http://nodejs.org/) and [Mocha](http://visionmedia.github.io/mocha/) installed on your continuous integration environment.
+You will need [Node.js](http://nodejs.org/) and [Mocha](http://mochajs.org/) installed on your continuous integration environment.
 
 ## Installation
 
